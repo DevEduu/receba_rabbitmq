@@ -13,7 +13,7 @@ ENV RABBITMQ_DISK_FREE_LIMIT=1GB
 ENV RABBITMQ_MEMORY_HIGH_WATERMARK=0.6
 ENV RABBITMQ_LOG_LEVEL_CONNECTION=error
 ENV RABBITMQ_LOG_LEVEL_DEFAULT=info
-ENV RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit log_levels [{connection,error},{default,info}]
+ENV RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS="-rabbit log_levels [{connection,error},{default,info}]"
 
 # Instala dependências adicionais se necessário
 RUN apt-get update && apt-get install -y \
